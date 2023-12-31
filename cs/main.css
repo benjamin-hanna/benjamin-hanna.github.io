@@ -1,0 +1,72 @@
+
+body {
+    margin-top: 1em; margin-bottom: 1em;
+    margin-left: 10%; margin-right: 10%;
+    color: black; background:white;
+    border: 3px solid black;
+    align-items: center;
+}
+canvas {
+    border: 3px solid black;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+    width: 800px;
+}
+div.header {
+    padding: 30px;
+    text-align: center;
+    background:#C0C0C0;
+    color: black;
+    font-size: 14px;
+    border-bottom: 3px solid black;
+}
+div.foot {
+    padding: 20px;
+    text-align: center;
+    background:#C0C0C0;
+    color: black;
+    font-size: 14px;
+    border-top: 3px solid black;
+}
+
+.monospace {
+    font-family: "Lucida Console", Courier, monospace;
+}
+.button {
+    background-color: "white";
+    border: 2px solid black;
+    border-radius: 8px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+    position: relative;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Lucida Console", Courier, monospace;
+}
+.button:hover {
+    background-color: black;
+    color: #C0C0C0;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 15%; 
+    padding: 10px;
+    height: 435px; 
+  }
+  
+/* Clear floats after the columns */
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}

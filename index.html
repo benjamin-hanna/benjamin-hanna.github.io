@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Benjamin Hanna - Personal Website</title>
-  </head>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <title> Game of Life </title>
+        <link rel="stylesheet" type="text/css" href="cs/main.css">
+        <div class="header">
+            <h1 class="monospace"> Conway's Game of Life</h1>
+        </div>
 
-    <header>
-    <h1>Benjamin Hanna</h1>
-    <p>benjamin.hanna@protonmail.com / <a href="www.linkedin.com/in/b-hanna">LinkedIn</a> / <a href="https://github.com/benjamin-hanna">GitHub</a> / Austin, TX</p>
-  </header>
-
-  <body>
-    <h1>About</h1>
-    <h1>Projects</h1>
-    <h1>Education</h1>
-    <h1>Technologies</h1>
-  </body>
+    </head>
+    <body>
+        <div class="row">
+            <div class="column" style="background-color:#C0C0C0;">
+                <input id="next" type="button" class="button" value=">" onclick="next();" />
+                <br>
+                <input id="doWork" type="button" class="button" value="start" onclick="doWork();" />
+                <input id="stopWork" type="button" class="button" value="stop" onclick="stopWork();" />
+                <input id="clearWork" type="button" class="button" value="clear" onclick="clearWork();" />
+                <br>
+                <input id="gosperGun" type="button" class="button" value="gosper gun" onclick="gosperGun();" />
+                <input id="pulsar" type="button" class="button" value="pulsar" onclick="pulsar();" />
+            </div>
+        <canvas id="canvas" width="800" height="450"></canvas>  
+    </body>
+    <footer>
+        <div class="foot">
+            <script type="text/javascript" src="js/cell.js"></script>
+            <script type="text/javascript" src="js/gosper-gun.js"></script>
+            <script type="text/javascript" src="js/pulsar.js"></script>
+            <script type="text/javascript" src="js/game-of-life.js"></script>
+        </div>
+    </footer>
 </html>
