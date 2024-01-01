@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-        <meta content="utf-8" http-equiv="encoding">
-        <title> Game of Life </title>
-        <link rel="stylesheet" type="text/css" href="cs/main.css">
-        <div class="header">
-            <h1 class="monospace"> Conway's Game of Life</h1>
-        </div>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <title>Benjamin Hanna - Home Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <div class="header">
+      <h1 class="monospace">Home Page - Benjamin Hanna</h1>
+    </div>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script>
+      var canvas = document.getElementById("canvas"),
+        context = canvas.getContext("2d");
 
-    </head>
-    <body>
-        <div class="row">
-            <div class="column" style="background-color:#C0C0C0;">
-                <input id="next" type="button" class="button" value=">" onclick="next();" />
-                <br>
-                <input id="doWork" type="button" class="button" value="start" onclick="doWork();" />
-                <input id="stopWork" type="button" class="button" value="stop" onclick="stopWork();" />
-                <input id="clearWork" type="button" class="button" value="clear" onclick="clearWork();" />
-                <br>
-                <input id="gosperGun" type="button" class="button" value="gosper gun" onclick="gosperGun();" />
-                <input id="pulsar" type="button" class="button" value="pulsar" onclick="pulsar();" />
-            </div>
-        <canvas id="canvas" width="800" height="450"></canvas>  
-    </body>
-    <footer>
-        <div class="foot">
-            <script type="text/javascript" src="js/cell.js"></script>
-            <script type="text/javascript" src="js/gosper-gun.js"></script>
-            <script type="text/javascript" src="js/pulsar.js"></script>
-            <script type="text/javascript" src="js/game-of-life.js"></script>
-        </div>
-    </footer>
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    </script>
+
+    <script type="text/javascript" src="js/cell.js"></script>
+    <script type="text/javascript" src="js/game-of-life.js"></script>
+    <script type="text/javascript" src="js/gosper-gun.js"></script>
+    <script type="text/javascript" src="js/pulsar.js"></script>
+    <script type="text/javascript" src="js/rpentomino.js"></script>
+  </body>
 </html>

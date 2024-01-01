@@ -3,7 +3,7 @@ class Pulsar {
     this.array = array;
   }
   makePulsar() {
-    var pulsarArrayX = new Array(
+    let pulsarArrayX = new Array(
       380,
       380,
       370,
@@ -62,7 +62,7 @@ class Pulsar {
       460
     );
 
-    var pulsarArrayY = new Array(
+    let pulsarArrayY = new Array(
       200,
       190,
       190,
@@ -121,28 +121,12 @@ class Pulsar {
       190
     );
 
-    for (var i = 0; i < pulsarArrayX.length; i++) {
-      var x = pulsarArrayX[i];
-      var y = pulsarArrayY[i];
-      var cell = new Cell("ALIVE", x, y, 0);
+    for (let i = 0; i < pulsarArrayX.length; i++) {
+      let x = pulsarArrayX[i];
+      let y = pulsarArrayY[i];
+      let cell = new Cell("ALIVE", x, y, 0);
       addCell(cell, this.array);
     }
     return this.array;
   }
 }
-
-// 360 270
-// 360 280
-// 360 290
-// 420 270
-// 410 270
-// 420 280
-// 420 290
-// 440 250
-// 440 240
-// 450 250
-// 460 250
-// 440 190
-// 440 200
-// 450 190
-// 460 190
